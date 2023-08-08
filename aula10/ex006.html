@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos doom</title>
+    <style>
+        div#area{
+            background-color: rgb(9, 121, 9);
+            font: normal 15pt arial;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja...
+
+    </div>
+    <script>
+        var area = document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrou)
+        area.addEventListener('mouseout', saiu)
+
+        function clicar(){
+        
+            area.innerText = 'Clickou!'
+            area.style.background ='red'
+        }
+        function entrou(){
+            area.innerText='Entrou!'
+
+        }
+        function saiu(){
+            area.innerText='Saiu!'
+            area.style.background = 'green'
+
+        }
+    </script>
+    
+</body>
+</html>
