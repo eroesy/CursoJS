@@ -1,6 +1,5 @@
-var c = 1
-while(c < 2){
-    c ++
-    console.log('tudo bem?')
-    console.log('Eae')
-}
+var c = 0
+do{
+    console.log(`contando: ${c}x`)
+    c++
+}while(c <= 200)
