@@ -7,8 +7,10 @@ while (c<= 5){
 }
 */
 //----------------------
-for(var c = 1;c<= 12;c++){
+console.log('Vai começar')
+for(var c = 1;c<= 3;c++){
     console.log(c)
 
 
 }
+console.log('fim..')
