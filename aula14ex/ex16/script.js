@@ -16,7 +16,7 @@ function contar(){
         var f = Number(fim.value)
         var p = Number(passo.value)
         if(i < f){
-            for(var c = i;c <=f;c += p){// contagem regressiva
+            for(var c = i;c <=f;c += p){// contagem progressiva
                 res.innerHTML += `${c} \u{1f449}`
             }
         }else if(i > f){ //contagem regressiva
